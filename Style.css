@@ -1,8 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 :root {
-  --background: #000;
+  --background: #1F1A24;
   --text: #FFF;
-  --highlight: #FF1EAD;
+  --highlight: #BB86FC;
+}
+
+.card {
+  border-radius: 5px;
+  background-color: #332940;
+  color: white;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 40%;
 }
 
 body {
@@ -18,8 +29,8 @@ body {
           justify-content: center;
   height: 100vh;
   overflow: hidden;
-  -webkit-transition: 0.5s background ease;
-  transition: 0.5s background ease;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .container {
@@ -36,6 +47,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 4px 16px;
 }
 
 .theme-switch {
@@ -79,5 +91,11 @@ body {
 
 .light-theme a {
   color: var(--text);
+}
+
+.light-theme .card {
+  border-radius: 5px;
+  background-color: #c7bed3;
+  color: black;
 }
 /*# sourceMappingURL=Style.css.map */
